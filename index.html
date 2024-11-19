@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Converter</h1>
+        <div class="converter">
+            <label for="unit-type">Choose conversion type:</label>
+            <select id="unit-type" onchange="updatePlaceholder()">
+        <option value="kmToMiles">Kilometer to Miles</option>
+        <option value="cToF">Celsius to Fahrenheit</option>
+        <option value="kgToLb">Kilogram to Pounds</option>
+        <option value="lToGal">Liters to Gallons</option>
+      </select>
+
+            <input type="number" id="input-value" placeholder="Enter value" class="input" />
+            <button onclick="convert()">Convert</button>
+
+            <div class="result" id="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
